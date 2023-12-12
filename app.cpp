@@ -14,7 +14,7 @@ void Setup(){
 }
 void Draw(){
 
-    system("cls");
+    system("CLS");
 
     for(int i = 0; i < width; i++){
         cout <<"#";
@@ -25,7 +25,7 @@ void Draw(){
             if(j == 0 || j == width-1){
                 cout << "#";
             }else{
-                cout<< "#";
+                cout<< " ";
             }
         }cout<<endl;
     }
@@ -45,6 +45,6 @@ int main() {
     Draw();
     Input();
     Logic();
-    Sleep(50);
+    Sleep(2000);
   }
 }

@@ -1,0 +1,4 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (x64\Debug\) contém arquivos compartilhados de outro projeto (Pedra-Papel-Tesoura.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  jogoDaVelha.cpp
+pedraPapelTesoura.obj : error LNK2005: main já definida no jogoDaVelha.obj
+C:\Users\Pichau\source\repos\Pedra-Papel-Tesoura\x64\Debug\Pequenos-Projetos.exe : fatal error LNK1169: encontrados um ou mais símbolos múltiplos definidos

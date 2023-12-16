@@ -48,6 +48,7 @@ public:
 
 		while (editando) {
 			drawEditarMenu();
+			cin.ignore();
 			cout << "\n1. Nome: " << livros[livroId][0];
 			cout << "\n2. Autor: " << livros[livroId][1];
 			cout << "\n3. Ano de lancamento: " << livros[livroId][2];
@@ -69,7 +70,7 @@ public:
 				editando = false;
 				break;
 			}
-			cin.ignore();
+			
 		}
 	}
 
@@ -81,7 +82,7 @@ public:
 		drawListaMenu();
 
 		cout << "\n";
-		int id = 0;
+		float id = 0.0;
 		for (vector<string> listaLivros : livros) {						
 			cout << "\nID - " << id << "\n";
 			int c = 0;
@@ -98,7 +99,6 @@ public:
 		cout << "\nDigite a opcao: ";
 		cin >> op;
 		if (op == -1) {
-			rodando = false;
 		}
 		else if (op >= 0 && op < livros.size()) {
 			editarLivro(op);
